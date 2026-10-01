@@ -316,5 +316,21 @@
          <script src="https://molari-beta.vercel.app/widget.js" data-clinic="galana"
                  data-color="#00A0C0" data-origin="https://molari-beta.vercel.app"></script> -->
     <script src="js/chat-widget.js" defer></script>
+
+    <!-- Vercel Web Analytics — mide visitas y páginas vistas.
+         Sin cookies ni datos personales, así que no requiere banner de
+         consentimiento: importa porque este es un sitio de salud (Ley 21.719).
+
+         OJO: el script por sí solo no mide nada. Hay que activar Analytics en
+         el dashboard de Vercel (proyecto → Analytics → Enable) y volver a
+         desplegar; recién ahí existe la ruta /_vercel/insights/.
+
+         El dashboard muestra además una ruta única por proyecto, más resistente
+         a los bloqueadores de anuncios. Si se quiere usar, se reemplaza el src
+         de abajo por esa. -->
+    <script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
